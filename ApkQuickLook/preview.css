@@ -1,0 +1,30 @@
+body, p{
+	font-family: -apple-system;
+	font-size: 14px;
+}
+
+.title{
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+.extra_line_spacing{
+	line-height: 1.7;
+}
+
+.info_table td{
+	padding-bottom: 10px;
+}
+
+.info_table{
+	padding-bottom: 5px;
+}
+
+.sig_valid{
+	color: #3A3;
+}
+
+.sig_invalid{
+	color: #F00;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="cid:preview.css"/>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td style="padding: 25px 15px 25px 25px">
+					<img src="cid:icon.png" width="192" height="192"/>
+				</td>
+				<td>
+					<div class="title">{%LocalizedName%}</div>
+					<div class="extra_line_spacing">
+						{%L_Size%}: {%Size%}<br/>
+    					{%L_LastMod%} {%LastMod%}<br/>
+						{%L_Version%}: {%VersionName%} ({%VersionCode%})<br/>
+						{%L_PackageID%}: {%PackageID%}
+					</div>
+				</td>
+		</table>
+		<table width="100%" cellspacing="0" cellpadding="0" class="info_table">
+			<tr>
+				<td width="232">{%L_MinSystemVersion%}</td>
+				<td>Android {%MinAndroid%} (SDK {%MinSDK%})</td>
+			</tr>
+			<tr>
+				<td width="232">{%L_TargetSystemVersion%}</td>
+				<td>Android {%TargetAndroid%} (SDK {%TargetSDK%})</td>
+			</tr>
+			<tr>
+				<td width="232">{%L_CompatibleCPUs%}</td>
+				<td>{%CompatibleCPUs%}</td>
+			</tr>
+			<tr>
+				<td width="232" valign="top">{%L_Permissions%}</td>
+				<td>{%Permissions%}</td>
+			</tr>
+			<tr style="{%SignatureBlockStyle%}">
+				<td width="232" valign="top">{%L_Certificate%}</td>
+				<td>{%CertOwner%}<br/>SHA1: {%CertSHA1%}<br/><span class="{%SignatureValidityClass%}">{%SignatureValidity%}</span></td>
+			</tr>
+		</table>
+		<a href="https://play.google.com/store/apps/details?id={%PackageID%}" target="_blank"><button>{%L_OpenInGooglePlay%}</button></a>
+	</body>
+</html>
